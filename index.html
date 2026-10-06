@@ -9,24 +9,6 @@
 </head>
 <body>
 
-    <!-- ЕДИНЫЙ КОНТЕЙНЕР ДЛЯ ФОНОВ (Лежит под всем сайтом) -->
-    <div class="bg-container">
-        <!-- Фиолетовый градиент на высоту первого экрана -->
-        <div class="hero-bg"></div>
-        <!-- Желто-оранжевая кривая на всю высоту страницы -->
-        <div class="bg-line">
-            <svg viewBox="0 0 100 1000" preserveAspectRatio="none">
-                <defs>
-                    <linearGradient id="yellowOrangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color:#f5af19; stop-opacity:0.9" />
-                        <stop offset="100%" style="stop-color:#f12711; stop-opacity:0.9" />
-                    </linearGradient>
-                </defs>
-                <path d="M 20,0 C 80,150 10,250 50,400 C 90,550 20,700 60,850 C 80,920 30,980 40,1000 L 48,1000 C 38,980 88,920 68,850 C 28,700 98,550 58,400 C 18,250 88,150 28,0 Z" fill="url(#yellowOrangeGrad)" />
-            </svg>
-        </div>
-    </div>
-
     <!-- Шапка сайта -->
     <header>
         <nav>
@@ -46,10 +28,10 @@
         </nav>
     </header>
 
-    <!-- Весь контент лежит НАД фонами -->
     <main>
         <!-- Главный экран (Hero) -->
         <section id="hero" class="hero">
+            <div class="hero-bg"></div>
             <div class="hero-content fade-in">
                 <h1>Твой голос за интересную школу!</h1>
                 <p>Саша Бабаян — кандидат в президенты ученического самоуправления от 8 «А» класса</p>
@@ -127,7 +109,7 @@
 
                 <article class="card fade-in">
                     <h3 class="card-title"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/></svg> 3. VK Клипы</h3>
-                    <p>В любой момент на перемене к вам может подойти человек с микрофоном. Нас ждут регулярные весёлые рубрики и интерактивы!</p>
+                    <p>В любой момент на перемене к вам может подойти человек с микрофоном. Нас ждут регуляр весёлые рубрики и интерактивы!</p>
                 </article>
 
                 <article class="card fade-in">
