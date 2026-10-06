@@ -84,7 +84,7 @@ nav {
    ========================================= */
 .hero {
     position: relative;
-    z-index: 1; /* Обязательно для правильного отображения фона */
+    z-index: 1;
     width: 100%; min-height: 100vh;
     display: flex; align-items: center; justify-content: center;
     text-align: center; padding: 0 15px; color: var(--white);
@@ -109,7 +109,6 @@ nav {
     max-width: 800px;
 }
 
-/* Убрали hyphens: auto, чтобы слова не переносились с дефисом */
 .hero h1 {
     font-size: clamp(2rem, 8vw, 4.5rem);
     font-weight: 900; margin-bottom: 20px; line-height: 1.1;
@@ -199,7 +198,13 @@ nav {
 }
 .event-item h4 { color: #fddb92; margin-bottom: 10px; }
 
-.highlight-card { background: var(--grad-yellow); color: var(--white); border-top: none; grid-column: span 2; }
+/* ИСПРАВЛЕННЫЙ ОРАНЖЕВЫЙ БЛОК */
+.highlight-card { 
+    background: var(--grad-yellow); 
+    color: var(--white); 
+    border-top: none; 
+    grid-column: 1 / -1; /* Растягивает блок на все колонки */
+}
 .highlight-card h3 { font-size: clamp(1.5rem, 5vw, 1.8rem); }
 .highlight-card ul { margin-top: 15px; margin-left: 20px; font-weight: 600; }
 
